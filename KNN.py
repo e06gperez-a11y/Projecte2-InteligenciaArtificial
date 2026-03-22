@@ -22,7 +22,7 @@ class KNN:
         :param train_data: PxMxNx3 matrix corresponding to P color images
         :return: assigns the train set to the matrix self.train_data shaped as PxD (P pixel in a D dimensional = 4800 pixels space)
         """
-        train_data = np.array(train_data)
+        train_data = np.array(train_data, dtype = float)
         train_data = train_data.reshape(train_data.shape[0], -1)
         self.train_data = train_data
 
